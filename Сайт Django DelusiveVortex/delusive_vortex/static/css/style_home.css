@@ -1,0 +1,153 @@
+#canvas-image-blending {
+    width: 100%;
+    height: 3000px;
+    position: absolute
+
+}
+
+.da {
+    padding-top: 260px;
+    position: relative;
+    pointer-events: none;
+    touch-action: none;
+}
+
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.block2,
+.block3,
+.block4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.glav_name {
+    text-align: center;
+    font-family: Impact, sans-serif;
+    color: #00B0F0;
+    letter-spacing: 4px;
+    font-weight: normal;
+    margin-top: -5px;
+    text-shadow: 3px 3px 2px rgb(41, 0, 136);
+}
+
+.glav_text{
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    letter-spacing: 2px;  
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.text2 {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    color: white;
+}
+
+.text3 {
+    flex: 1;
+    padding: 0 20px;
+    align-self: flex-start;
+    color: white;
+}
+
+.text4 {
+    flex: 1;
+    padding: 0 20px;
+    align-self: flex-start;
+    color: white;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 60px;
+    border: 16px ridge #141221;
+    box-shadow: 0 0 35px rgb(0, 0, 0); 
+    width: 100%;
+    height: 350px;
+}
+
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.Zagolovok1{
+    font-family: Impact, sans-serif;
+    color: #00B0F0;
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-shadow: 3px 3px 2px rgb(11, 0, 136);
+}
+
+
+
+.Rasskaz1{
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.Zagolovok2{
+    font-family: Impact, sans-serif;
+    color: #00B0F0;
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-shadow: 3px 3px 2px rgb(11, 0, 136);
+}
+
+.Rasskaz2{
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.Zagolovok3{
+    font-family: Impact, sans-serif;
+    color: #00B0F0;
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-shadow: 3px 3px 2px rgb(11, 0, 136);
+}
+
+.Rasskaz3{
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.Zagolovok1,
+.Zagolovok2,
+.Zagolovok3,
+.Rasskaz1,
+.Rasskaz2,
+.Rasskaz3 {
+  margin-bottom: -5px;
+}
+
+.glav_name2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Impact, sans-serif;
+    color: #00B0F0;
+    letter-spacing: 4px;
+    font-weight: normal;
+    margin-top: -5px;
+    text-shadow: 3px 3px 2px rgb(41, 0, 136);
+}
+
+.Rasskaz4 {
+    margin-bottom: 20zpx;
+  }

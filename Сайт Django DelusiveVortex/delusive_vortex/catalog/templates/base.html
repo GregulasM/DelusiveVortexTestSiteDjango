@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delusive Vortex</title>
+    <!-- Подключаем стили CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header-image"></div>
+        <nav class="navbar-container">
+            <div class="navbar-item buttonImage1">
+                <a href="{% url 'home' %}">Главная</a>
+            </div>
+            <div class="navbar-item buttonImage2">
+                <a href="{% url 'maps' %}">Наши карты</a>
+            </div>
+            <div class="navbar-item buttonImage3">
+                <a href="{% url 'world_maps' %}">Мир карты</a>
+            </div>
+            <div class="navbar-item buttonImage4">
+                <a href="{% url 'about' %}">О нас</a>
+            </div>
+            <div class="navbar-item search-button">
+                <form action="{% url 'search' %}" method="GET" class="buttonImage10">
+                    <input type="text" name="query" placeholder="Поиск по сайту" class="search-tab">
+                    <button type="submit" class="search-put">Найти</button>
+                </form>
+            </div>
+            <div class="navbar-item">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">Logout</a>
+                    <span class="navbar-item" "buttonImage5"></span>
+                    <a href="{% url 'profile' %}" class="btn btn-primary">Profile</a>
+                {% else %}
+                    <a href="{% url 'register' %}">Register</a>
+                    <span class="navbar-item buttonImage"></span>
+                    <a href="{% url 'login' %}">Login</a>
+                {% endif %}
+            </div>
+        </nav>
+        
+        
+        
+        
+    </header>
+    
+
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <footer>
+        <p>Все права защищены. Delusive Vortex &copy; 2023</p>
+    </footer>
+
+</body>
+</html>

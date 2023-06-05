@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../static/css/style_maps.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+
+<canvas id="canvas-image-blending"></canvas>
+
+<div class="top-margin">
+    <div class="container">
+        <h1 class='nav-glavname'>Наши карты</h1>
+        <nav class='nav-display'>
+            <ul class="navbar">
+                <a href="#" onclick="switchTab('chapter1', event)" class='Zagolovok'>Delusive Vortex Chapter 1</a>
+                <a href="#" onclick="switchTab('chapter2', event)" class='Zagolovok'>Delusive Vortex Chapter 2</a>
+                <a href="#" onclick="switchTab('chapter3', event)" class='Zagolovok'>Delusive Vortex Chapter 3</a>
+            </ul>
+        </nav>
+        <div id="chapter1" class="tab-content">
+
+                    <p class='Zagolovok_str'>Карта Delusive Vortex Chapter 1</p>
+                    <p>Карта Delusive Vortex Chapter 1</p>
+                    <div class="multiple-items">
+                        <div>   <img src="../../static/images/home1.jpg" alt="Image 3" class='slider_image slider_image1'> </div>
+                        <div>   <img src="../../static/images/home2.jpg" alt="Image 3" class='slider_image slider_image2'> </div>
+                        <div>   <img src="../../static/images/home3.jpg" alt="Image 3" class='slider_image slider_image3'> </div>
+                    </div>
+                    
+        </div>
+        <div id="chapter2" class="tab-content active-tab">
+
+                    <p class='Zagolovok_str'>Карта Delusive Vortex Chapter 2</p>
+                    <p>Карта Delusive Vortex Chapter 1</p>
+                    <div class="multiple-items">
+                        <div>   <img src="../../static/images/home1.jpg" alt="Image 3" class='slider_image slider_image1'> </div>
+                        <div>   <img src="../../static/images/home2.jpg" alt="Image 3" class='slider_image slider_image2'> </div>
+                        <div>   <img src="../../static/images/home3.jpg" alt="Image 3" class='slider_image slider_image3'> </div>
+                    </div>
+                    
+        </div>
+        <div id="chapter3" class="tab-content">
+
+                    <p class='Zagolovok_str'>Карта Delusive Vortex Chapter 3</p>
+                    <p>Карта Delusive Vortex Chapter 1</p>
+                    <div class="multiple-items">
+                        <div>   <img src="../../static/images/home1.jpg" alt="Image 3" class='slider_image slider_image1'> </div>
+                        <div>   <img src="../../static/images/home2.jpg" alt="Image 3" class='slider_image slider_image2'> </div>
+                        <div>   <img src="../../static/images/home3.jpg" alt="Image 3" class='slider_image slider_image3'> </div>
+                    </div>
+
+        </div>
+    </div>
+</div>
+    
+    
+                   
+    
+    <footer>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../../static/js/js_maps.js"></script>
+</body>
+
+</html>
+{% endblock %}

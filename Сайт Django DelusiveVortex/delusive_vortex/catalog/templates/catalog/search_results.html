@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Результаты поиска</h2>
+  <p>Вы искали: "{{ query }}"</p>
+  
+  {% if results %}
+    <ul>
+      {% for sentence in results %}
+        <li>{{ sentence }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Ничего не найдено</p>
+  {% endif %}
+{% endblock %}

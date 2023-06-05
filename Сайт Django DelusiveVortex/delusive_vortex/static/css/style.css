@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+     
+
+        
+}
+
+.buttonImage1{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage2{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage3{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage4{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 110%;
+}
+
+.buttonImage5{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage6{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage7{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 150%;
+}
+
+.buttonImage8{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 220%;
+}
+
+.buttonImage9{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 220%;
+}
+
+.buttonImage10{
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 220%;
+}
+
+/* .buttonImage,
+.buttonImage1,
+.buttonImage2,
+.buttonImage3,
+.buttonImage4,
+.buttonImage5,
+.buttonImage6,
+.buttonImage7,
+.buttonImage8,
+.buttonImage9,
+.buttonImage10
+{
+overflow: hidden;
+} */
+
+.container {
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #110e27;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 12px ridge #060510;
+}
+
+.navbar-container {
+    background-image: url('../images/blockHex5.png');
+    display: flex;
+    background-color: #101010;
+    padding: 45px;
+    font-family: Impact, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    border: 16px ridge #121621;
+    box-shadow: 0 0 20px rgb(0, 0, 0); 
+}
+
+.navbar-item {
+    flex-grow: 1;
+    text-align: center;
+    background-image: url('../images/button.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.navbar-item::before,
+.navbar-item::after {
+    content: "|";
+    color: #00B0F0;
+    font-weight: bold;
+}
+
+.search-tab{
+    color:#121621;
+    background-color: #121621;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 0.3px #3c2d7f;
+    -webkit-text-fill-color: white;
+}
+
+.search-put{
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 0.5px #3c2d7f;
+    -webkit-text-fill-color: white;
+    background-color: #121621; 
+}
+
+.navbar-item.search-button::before,
+.navbar-item.search-button::after {
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+    
+    
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1.5px #3c2d7f;
+    -webkit-text-fill-color: white;
+  }
+  
+
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-image {
+    height: 200px;
+    background-image: url('../images/LogoSite2.png'); /* Modify the path based on the image location */
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}

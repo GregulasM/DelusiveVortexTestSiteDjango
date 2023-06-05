@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Личный кабинет</h2>
+  <p>Добро пожаловать, {{ user.username }}!</p>
+  <!-- Дополнительная информация о пользователе -->
+  <p>Имя: {{ user.first_name }}</p>
+  <p>Фамилия: {{ user.last_name }}</p>
+  <p>Email: {{ user.email }}</p>
+  <!-- Добавьте другие поля, если необходимо -->
+  <h3>Корзина</h3>
+  {% if orders %}
+    <ul>
+      {% for order in orders %}
+        <li>{{ order.product.name }} - {{ order.product.price }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Ваша корзина пуста.</p>
+  {% endif %}
+  <a href="{% url 'logout' %}">Выйти</a>
+{% endblock %}
